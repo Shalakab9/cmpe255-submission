@@ -93,7 +93,7 @@ class FaceRecognition:
                 plt.title(predicted[i], size=12, fontdict={'color': 'red'})
             plt.xticks(())
             plt.yticks(())
-            plt.show()
+        plt.show()
 
     def confusionMatrix(self,y_test, y_pred,target_names):
         cm = confusion_matrix(y_test, y_pred)
